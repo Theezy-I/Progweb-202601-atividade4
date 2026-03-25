@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fcfcfc;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #2a7cbd, #3ba0df);
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo i { color: #ff9933; }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+nav a:hover, nav a.active {
+    border-bottom: 2px solid white;
+}
+
+.hero {
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+.hero h1 { font-size: 48px; margin-bottom: 10px; }
+.hero p { font-size: 20px; margin-bottom: 25px; font-weight: 500; }
+
+.btn-orange {
+    background: linear-gradient(to bottom, #ff9933, #e65c00);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.btn-orange:hover { background: linear-gradient(to bottom, #ffa64d, #cc5200); }
+
+.btn-blue {
+    background: linear-gradient(to bottom, #1084d0, #0a65a3);
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #0d4b75;
+    font-size: 24px;
+    margin: 40px 0 30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-title::before, .section-title::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #d1d1d1;
+    margin: 0 20px;
+}
+
+.destinations {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 300px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #0d4b75;
+    margin: 15px 0 10px;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 14px;
+    padding: 0 15px;
+}
+
+.about {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px 0 40px;
+}
+.about p { margin-bottom: 25px; color: #444; }
+
+.contact-location {
+    background-color: #e1f0fa;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px 50px;
+    flex-wrap: wrap;
+}
+
+.contact-form, .location-info {
+    width: 45%;
+    min-width: 300px;
+}
+
+.small-title {
+    display: flex;
+    align-items: center;
+    color: #0d4b75;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.small-title::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #b3d4ec;
+    margin-left: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.contact-form textarea { resize: vertical; height: 100px; }
+
+.location-info img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+}
+
+.location-details p {
+    margin-bottom: 10px;
+    color: #0d4b75;
+    font-weight: bold;
+}
+.location-details i { margin-right: 10px; font-size: 18px; }
+
+footer {
+    background-color: #2b6a9c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}

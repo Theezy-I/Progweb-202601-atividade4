@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreMundo - Todos os Destinos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Ajuste específico para o Header interno ficar um pouco menor */
+        .hero-internal {
+            background-image: url();
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+        .hero-internal h1 { font-size: 36px; }
+        
+        /* Grid maior para a página dedicada */
+        .destinations-grid {
+            padding: 40px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-location-dot"></i> ExploreMundo
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="destinos.html" class="active">Destinos</a></li>
+                <li><a href="index.html#sobre">Sobre</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero-internal">
+        <h1>Nosso Catálogo de Destinos</h1>
+    </div>
+
+    <section class="destinations-grid">
+        <div class="card">
+            <img src= alt="Praia">
+            <h3>Praias Paradisíacas</h3>
+            <p>Caribe, Maldivas e Nordeste Brasileiro.</p>
+        </div>
+        <div class="card">
+            <img src= alt="Montanhas">
+            <h3>Montanhas e Neve</h3>
+            <p>Alpes Suíços, Andes e Montanhas Rochosas.</p>
+        </div>
+        <div class="card">
+            <img src= alt="Cidade Histórica">
+            <h3>Cidades Históricas</h3>
+            <p>Roma, Atenas e Praga te aguardam.</p>
+        </div>
+        <div class="card">
+            <img src= alt="Natureza Selva">
+            <h3>Ecoturismo</h3>
+            <p>Exploração segura em reservas naturais.</p>
+        </div>
+        <div class="card">
+            <img src= alt="Deserto">
+            <h3>Aventuras no Deserto</h3>
+            <p>Safáris e passeios de camelo incríveis.</p>
+        </div>
+        <div class="card">
+            <img src= alt="Metrópoles">
+            <h3>Metrópoles Modernas</h3>
+            <p>Tóquio, Nova York e Dubai.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ExploreMundo - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>

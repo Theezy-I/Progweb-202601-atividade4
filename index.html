@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viva Viagens – Explore o Mundo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-icon">✈️</span>
+                <span class="logo-text">Viva<em>Viagens</em></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="#">Pacotes</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#" class="btn-reservar">Reservar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Descubra o Mundo com a Gente</h1>
+            <p>Pacotes exclusivos para os destinos mais incríveis do planeta. Sua próxima aventura começa aqui.</p>
+            <a href="destinos.html" class="btn-primary">Ver Destinos</a>
+        </div>
+    </section>
+
+    <!-- ===== SEARCH BAR ===== -->
+    <div class="search-bar">
+        <form>
+            <div class="search-group">
+                <label for="destino">Destino</label>
+                <input type="text" id="destino" placeholder="Para onde você quer ir?">
+            </div>
+            <div class="search-group">
+                <label for="chegada">Chegada</label>
+                <input type="date" id="chegada">
+            </div>
+            <div class="search-group">
+                <label for="partida">Partida</label>
+                <input type="date" id="partida">
+            </div>
+            <div class="search-group">
+                <label for="pessoas">Pessoas</label>
+                <select id="pessoas">
+                    <option>1 Pessoa</option>
+                    <option>2 Pessoas</option>
+                    <option>3 Pessoas</option>
+                    <option>4+ Pessoas</option>
+                </select>
+            </div>
+            <button type="submit" class="btn-search">🔍 Buscar</button>
+        </form>
+    </div>
+
+    <!-- ===== DESTINOS EM DESTAQUE ===== -->
+    <section class="destinations">
+        <div class="section-title">
+            <h2>Destinos em Destaque</h2>
+            <p>Os lugares mais procurados pelos nossos viajantes</p>
+            <div class="underline"></div>
+        </div>
+
+        <div class="destinations-grid">
+
+            <!-- Card 1 -->
+            <div class="destination-card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=600&q=80" alt="Bali, Indonésia">
+                    <span class="card-badge">Mais Vendido</span>
+                </div>
+                <div class="card-body">
+                    <p class="card-location">📍 Indonésia</p>
+                    <h3>Bali</h3>
+                    <p>Praias paradisíacas, templos místicos e uma natureza exuberante fazem de Bali um sonho tropical.</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-price">
+                        A partir de
+                        <strong>R$ 4.299</strong>
+                    </div>
+                    <a href="#" class="btn-card">Ver Pacote</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="destination-card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80" alt="Paris, França">
+                    <span class="card-badge">Romântico</span>
+                </div>
+                <div class="card-body">
+                    <p class="card-location">📍 França</p>
+                    <h3>Paris</h3>
+                    <p>A Cidade Luz encanta com a Torre Eiffel, culinária refinada e uma cultura única e inesquecível.</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-price">
+                        A partir de
+                        <strong>R$ 6.800</strong>
+                    </div>
+                    <a href="#" class="btn-card">Ver Pacote</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="destination-card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Suíça">
+                    <span class="card-badge">Aventura</span>
+                </div>
+                <div class="card-body">
+                    <p class="card-location">📍 Suíça</p>
+                    <h3>Alpes Suíços</h3>
+                    <p>Montanhas nevadas, lagos cristalinos e vilarejos encantadores que parecem saídos de um conto de fadas.</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-price">
+                        A partir de
+                        <strong>R$ 8.500</strong>
+                    </div>
+                    <a href="#" class="btn-card">Ver Pacote</a>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="destination-card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=600&q=80" alt="Maldivas">
+                    <span class="card-badge">Exclusivo</span>
+                </div>
+                <div class="card-body">
+                    <p class="card-location">📍 Maldivas</p>
+                    <h3>Maldivas</h3>
+                    <p>Bangalôs sobre a água turquesa, recifes de coral e um pôr do sol que ficará para sempre na memória.</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-price">
+                        A partir de
+                        <strong>R$ 12.000</strong>
+                    </div>
+                    <a href="#" class="btn-card">Ver Pacote</a>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="destination-card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=80" alt="Noruega">
+                    <span class="card-badge">Natureza</span>
+                </div>
+                <div class="card-body">
+                    <p class="card-location">📍 Noruega</p>
+                    <h3>Fiordes da Noruega</h3>
+                    <p>Paisagens dramáticas de fiordes, Aurora Boreal e uma natureza selvagem sem igual na Europa.</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-price">
+                        A partir de
+                        <strong>R$ 9.200</strong>
+                    </div>
+                    <a href="#" class="btn-card">Ver Pacote</a>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="destination-card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1543158181-e6f9f6712055?w=600&q=80" alt="Santorini, Grécia">
+                    <span class="card-badge">Romântico</span>
+                </div>
+                <div class="card-body">
+                    <p class="card-location">📍 Grécia</p>
+                    <h3>Santorini</h3>
+                    <p>Casas brancas com cúpulas azuis, falésias sobre o mar Egeu e um charme inconfundível do Mediterrâneo.</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-price">
+                        A partir de
+                        <strong>R$ 7.400</strong>
+                    </div>
+                    <a href="#" class="btn-card">Ver Pacote</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ver-mais-wrap">
+            <a href="destinos.html" class="btn-outline">Ver Mais Destinos →</a>
+        </div>
+    </section>
+
+    <!-- ===== POR QUE NOS ESCOLHER ===== -->
+    <section class="features">
+        <div class="features-inner">
+            <div class="section-title">
+                <h2>Por que Viajar com a Gente?</h2>
+                <p>Experiência, qualidade e cuidado em cada detalhe</p>
+                <div class="underline"></div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">💰</div>
+                    <h3>Melhor Preço</h3>
+                    <p>Garantimos o menor preço do mercado. Encontrou mais barato? A gente cobre!</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Viagem Segura</h3>
+                    <p>Seguro viagem incluso em todos os pacotes para você viajar totalmente tranquilo.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🎧</div>
+                    <h3>Suporte 24h</h3>
+                    <p>Nossa equipe está disponível 24 horas por dia, 7 dias por semana para te ajudar.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🌍</div>
+                    <h3>+100 Destinos</h3>
+                    <p>Mais de 100 destinos nacionais e internacionais para você escolher o seu favorito.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PAÍSES POPULARES ===== -->
+    <section class="countries">
+        <div class="section-title">
+            <h2>Países Populares</h2>
+            <p>Explore os destinos favoritos dos nossos viajantes</p>
+            <div class="underline"></div>
+        </div>
+        <div class="countries-strip">
+            <div class="country-item">
+                <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?w=300&q=80" alt="Japão">
+                <div class="country-name">Japão</div>
+            </div>
+            <div class="country-item">
+                <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=300&q=80" alt="Portugal">
+                <div class="country-name">Portugal</div>
+            </div>
+            <div class="country-item">
+                <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=300&q=80" alt="Itália">
+                <div class="country-name">Itália</div>
+            </div>
+            <div class="country-item">
+                <img src="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=300&q=80" alt="EUA">
+                <div class="country-name">EUA</div>
+            </div>
+            <div class="country-item">
+                <img src="https://images.unsplash.com/photo-1574607383476-f517f260d30b?w=300&q=80" alt="Tailândia">
+                <div class="country-name">Tailândia</div>
+            </div>
+            <div class="country-item">
+                <img src="https://images.unsplash.com/photo-1522441815192-d9f04eb0615c?w=300&q=80" alt="Canadá">
+                <div class="country-name">Canadá</div>
+            </div>
+            <div class="country-item">
+                <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=300&q=80" alt="Brasil">
+                <div class="country-name">Brasil</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="newsletter">
+        <h2>Receba Ofertas Exclusivas</h2>
+        <p>Cadastre seu e-mail e seja o primeiro a saber das melhores promoções de viagem.</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Digite seu e-mail">
+            <button type="submit">Quero Receber!</button>
+        </form>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <p class="logo-text">Viva<em>Viagens</em></p>
+                <p>Tornamos o sonho de viajar realidade. Com pacotes para os melhores destinos do mundo, cada viagem é uma experiência única e inesquecível.</p>
+                <div class="social-links">
+                    <a href="#" title="Instagram">📸</a>
+                    <a href="#" title="Facebook">📘</a>
+                    <a href="#" title="WhatsApp">💬</a>
+                    <a href="#" title="YouTube">▶️</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Destinos</h4>
+                <ul>
+                    <li><a href="#">Europa</a></li>
+                    <li><a href="#">Ásia</a></li>
+                    <li><a href="#">Américas</a></li>
+                    <li><a href="#">Oceania</a></li>
+                    <li><a href="#">África</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Blog de Viagens</a></li>
+                    <li><a href="#">Trabalhe Conosco</a></li>
+                    <li><a href="#">Parceiros</a></li>
+                    <li><a href="#">Imprensa</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Suporte</h4>
+                <ul>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">Como Reservar</a></li>
+                    <li><a href="#">Cancelamentos</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 VivaViagens. Todos os direitos reservados. | CNPJ: 00.000.000/0001-00</p>
+        </div>
+    </footer>
+
+</body>
+</html>
